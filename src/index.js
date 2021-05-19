@@ -4,7 +4,7 @@ import Example from './page/Example'
 import Example2 from './page/Example2'
 import UseEffectDemo from './page/UseEffectDemo'
 import UseContextDemo from './page/useContextDemo'
-import useReducerDemo from './page/useReducerDemo'
+import UseReducerDemo from './page/UseReducerDemo'
 ReactDOM.render(
   <Example />,
   document.getElementById('root')
@@ -30,6 +30,6 @@ ReactDOM.render(
 );
 // useReducerDemo
 ReactDOM.render(
-  <useReducerDemo />,
+  <UseReducerDemo />,
   document.getElementById('hook4')
 );

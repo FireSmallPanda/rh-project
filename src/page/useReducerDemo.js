@@ -1,19 +1,21 @@
-import React, { useState,createContext,useContext } from 'react'
-const CountContext = createContext()
-function Counter(){
-    let count = useContext(CountContext)
-    return (<h2>{count}</h2>)
-}
+import React, { useReducer } from 'react'
 
 function Example4(){
-    const [count,setCount] = useState(0)
+    const [count,dispatch] = useReducer((state,action)=>{
+        switch(action){
+            case 'add':
+                return state+1
+            case 'sub':
+                return state - 1
+            default:
+                return state
+        }
+    },0)
     return (
         <div>
-            <div>useState点击我{count} 了次</div>
-            <button onClick={()=>{setCount( count + 1 )}} >点击我</button>
-            <CountContext.Provider value={count}>
-                <Counter />
-            </CountContext.Provider>
+            <div>useReducer现在的分数是{count} 了次</div>
+            <button onClick={()=>{dispatch('add')}} >加上</button>
+            <button onClick={()=>{dispatch('sub')}} >减去</button>
         </div>
     )
 }
