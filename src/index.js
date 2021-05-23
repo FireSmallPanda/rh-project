@@ -5,6 +5,7 @@ import Example2 from './page/Example2'
 import UseEffectDemo from './page/UseEffectDemo'
 import UseContextDemo from './page/useContextDemo'
 import UseReducerDemo from './page/UseReducerDemo'
+import UseRedux from './page/useRedux/useRedux.js'
 ReactDOM.render(
   <Example />,
   document.getElementById('root')
@@ -31,5 +32,10 @@ ReactDOM.render(
 // useReducerDemo
 ReactDOM.render(
   <UseReducerDemo />,
-  document.getElementById('hook4')
+  document.getElementById('hook5')
+);
+// useRedux
+ReactDOM.render(
+  <UseRedux />,
+  document.getElementById('hook6')
 );
