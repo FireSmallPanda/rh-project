@@ -6,6 +6,11 @@ import UseEffectDemo from './page/UseEffectDemo'
 import UseContextDemo from './page/useContextDemo'
 import UseReducerDemo from './page/UseReducerDemo'
 import UseRedux from './page/useRedux/useRedux.js'
+import UseMemoDemo from './page/useMemoDemo.js'
+import UseRefDemo from './page/useRefDemo.js'
+
+import UseCallbackDemo from './page/useCallbackDemo.js'
+
 ReactDOM.render(
   <Example />,
   document.getElementById('root')
@@ -38,4 +43,19 @@ ReactDOM.render(
 ReactDOM.render(
   <UseRedux />,
   document.getElementById('hook6')
+);
+// UseMemoDemo
+ReactDOM.render(
+  <UseMemoDemo />,
+  document.getElementById('hook7')
+);
+// UseRef
+ReactDOM.render(
+  <UseRefDemo />,
+  document.getElementById('hook8')
+);
+// UseRef
+ReactDOM.render(
+  <UseCallbackDemo />,
+  document.getElementById('hook9')
 );
