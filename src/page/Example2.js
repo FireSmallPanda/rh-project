@@ -10,4 +10,20 @@ function Example(){
     )
 }
 
+// function Example(){
+//     const  [ name, setName ] = useState('小凌');
+//     const isShowAge = false;
+//     if(isShowAge){
+//         const  [ age, setAge ] = useState(26);
+//     }
+//     const  [ hoppy, setHobby ] = useState('做菜');
+//     return (
+//         <div>
+//             <div>姓名：{name}</div>
+//             <div>年龄：{age}</div>
+//             <div>爱好：{hoppy}</div>
+//         </div>
+//     )
+// }
+
 export default Example;

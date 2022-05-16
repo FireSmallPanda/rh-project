@@ -11,6 +11,19 @@ function Example(){
             console.log('你更改了参数')
         }
     }, [count])
+
+    // useEffect(() => {
+    //     console.log('使用useEffect') 
+    //     // 所有更新都执行
+    // })
+
+    // useEffect(()=>{
+    //     console.log('使用useEffect')
+    // },[]) // 仅在挂载和卸载的时候执行
+
+    // useEffect(()=>{
+    //     console.log(count)
+    // },[count]) //count更新时执行
     return (
         <div>
             <div>useEffect点击我{count} 了次</div>
