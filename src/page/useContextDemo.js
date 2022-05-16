@@ -1,5 +1,5 @@
 import React, { useState,createContext,useContext } from 'react'
-const CountContext = createContext()
+export const CountContext = createContext()
 function Counter(){
     let count = useContext(CountContext)
     return (<h2>{count}</h2>)

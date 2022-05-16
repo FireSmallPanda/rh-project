@@ -6,7 +6,6 @@ const initState = {
     address: 0,
     height: 0
 }
-
 function Example4(){
     const [info,dispatch] = useReducer((state,action)=>{
         console.log(state);
