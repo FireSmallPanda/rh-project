@@ -1,5 +1,6 @@
 import React from 'react';
-import Buttons from './buttons';
+import AddBack from './AddBack';
+import AddColor from './AddColor';
 import ShowArea from './showAare';
 import { Color } from './color'
 function useRedux(){
@@ -7,7 +8,8 @@ function useRedux(){
         <div>
             <Color>
                 <ShowArea />
-                <Buttons />
+                <AddBack />
+                <AddColor />
             </Color>
             
         </div>

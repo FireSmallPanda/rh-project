@@ -1,8 +1,11 @@
 import React,{useContext} from 'react';
 import {ColorContext} from './color'
 function ShowArea(){
-    const {color} =  useContext(ColorContext);
-    return (<div style={{color:color}}>字体的颜色{color}</div>)
+    const {  state } =  useContext(ColorContext);
+    
+    return (
+        <div style={{color:state.color,backgroundColor:state.background}}>有趣的老凌</div>
+    )
 }
 
 export default ShowArea
